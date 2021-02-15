@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1613414348 source:/home/yatsuta/Programming/uni/lab1/main.cpp
+	<iostream>
+	"rational.h"
+
+1613414714 source:/home/yatsuta/Programming/uni/lab1/rational.cpp
+	<iostream>
+	"rational.h"
+
+1613414709 /home/yatsuta/Programming/uni/lab1/rational.h
+	<iostream>
+
