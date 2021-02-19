@@ -15,7 +15,7 @@ public:
     ~rational();
     rational (const rational& other);
 
-    operator double();
+    explicit operator double();
 
     rational operator+(rational other);
     rational operator+(int other);
