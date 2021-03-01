@@ -1,4 +1,6 @@
 #include <iostream>
+#include <utility>
+
 #include "rational.h"
 
 // private функции
@@ -7,13 +9,16 @@ int rational::get_gcd()
 {
     int a = num, b = den;
 
-    while (a && b)
+    if (b > a)
+        std::swap(a, b);
+
+    while (b)
     {
-        if (a > b) a %= b;
-        else b %= a;
+        a %= b;
+        std::swap(a, b);
     }
 
-    return a + b;
+    return a;
 }
 
 void rational::normalize()

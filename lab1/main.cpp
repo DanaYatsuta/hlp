@@ -21,7 +21,6 @@ int main()
             values_updated = !values_updated;
         }
 
-
         std::cout << "1. Сумма a и b." << std::endl <<
                      "2. Сумма a и целого числа." << std::endl <<
                      "3. Прибавить b к a " << std::endl <<
