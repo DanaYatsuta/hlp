@@ -10,10 +10,14 @@
 1613414709 /home/yatsuta/Programming/uni/lab1/rational.h
 	<iostream>
 
-1613414348 source:/home/yatsuta/Programming/uni/hlp/lab1/main.cpp
+1614578657 source:/home/yatsuta/Programming/uni/hlp/lab1/main.cpp
 	<iostream>
 	"rational.h"
 
-1613776269 /home/yatsuta/Programming/uni/hlp/lab1/rational.h
+1614578657 /home/yatsuta/Programming/uni/hlp/lab1/rational.h
 	<iostream>
+
+1614578657 source:/home/yatsuta/Programming/uni/hlp/lab1/rational.cpp
+	<iostream>
+	"rational.h"
 

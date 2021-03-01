@@ -25,7 +25,8 @@ int main()
         std::cout << "1. Сумма a и b." << std::endl <<
                      "2. Сумма a и целого числа." << std::endl <<
                      "3. Прибавить b к a " << std::endl <<
-                     "4. Прибавить целое число к a" << std::endl;
+                     "4. Прибавить целое число к a" << std::endl <<
+                     "0. Выход" << std::endl;
 
         std::cin >> choice;
 
@@ -81,6 +82,8 @@ int main()
                 values_updated = true;
                 break;
             }
+        case 0:
+            return 0;
         }
     }
 
