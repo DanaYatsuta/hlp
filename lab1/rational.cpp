@@ -30,7 +30,7 @@ void rational::normalize()
 
 // конструктор, деструктор и конструктор копирования
 
-rational::rational(int _num = 1, int _den = 1): num(_num), den(_den)
+rational::rational(int _num = 0, int _den = 1): num(_num), den(_den)
 {
     std::cout << "Создано рациональное число." << std::endl;
 }
@@ -66,7 +66,7 @@ rational rational::operator+(rational other)
 
 rational rational::operator+(int other)
 {
-    rational res = rational();
+    rational res;
 
     res.num = num + other * den;
     res.den = den;
