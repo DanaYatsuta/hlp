@@ -20,8 +20,8 @@ public:
     rational operator+(rational other);
     rational operator+(int other);
 
-    void operator+=(rational other);
-    void operator+=(int other);
+    rational operator+=(rational other);
+    rational operator+=(int other);
 
     friend std::ostream& operator<<(std::ostream& stream, rational& x);
 };

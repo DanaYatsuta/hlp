@@ -76,19 +76,23 @@ rational rational::operator+(int other)
     return res;
 }
 
-void rational::operator+=(rational other)
+rational rational::operator+=(rational other)
 {
     num = num * other.den + other.num * den;
     den = den * other.den;
 
     normalize();
+
+    return *this;
 }
 
-void rational::operator+=(int other)
+rational rational::operator+=(int other)
 {
     num += other * den;
 
     normalize();
+
+    return *this;
 }
 
 std::ostream& operator<<(std::ostream& stream, rational& x)
