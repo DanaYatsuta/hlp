@@ -16,8 +16,6 @@ int main()
 
     while(running)
     {
-
-
         if (values_updated)
         {
             std::cout << "a: " << a << " (" << (double)a << ")" << std::endl <<
@@ -30,8 +28,6 @@ int main()
                      "3. Прибавить b к a " << std::endl <<
                      "4. Прибавить целое число к a" << std::endl <<
                      "0. Выход" << std::endl;
-
-        //std::cin >> choice;
 
         do
             choice = getchar();
