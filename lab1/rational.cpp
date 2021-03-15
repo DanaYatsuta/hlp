@@ -76,7 +76,7 @@ rational rational::operator+(int other)
     return res;
 }
 
-rational rational::operator+=(rational other)
+rational& rational::operator+=(rational other)
 {
     num = num * other.den + other.num * den;
     den = den * other.den;
@@ -86,7 +86,7 @@ rational rational::operator+=(rational other)
     return *this;
 }
 
-rational rational::operator+=(int other)
+rational& rational::operator+=(int other)
 {
     num += other * den;
 
