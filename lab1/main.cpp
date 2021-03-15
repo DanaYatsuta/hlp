@@ -1,7 +1,7 @@
 #include <iostream>
 #include "rational.h"
 
-#define AMOUNT_OF_CHOICES '4'
+#define MAX_CHOICE '4'
 
 int main()
 {
@@ -35,7 +35,7 @@ int main()
 
         do
             choice = getchar();
-        while (choice < '0' || choice > '4' );
+        while (choice < '0' || choice > MAX_CHOICE );
 
         switch(choice)
         {
