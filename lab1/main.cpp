@@ -1,6 +1,8 @@
 #include <iostream>
 #include "rational.h"
 
+#define AMOUNT_OF_CHOICES '4'
+
 int main()
 {
     setlocale(LC_CTYPE, "rus");
@@ -14,6 +16,8 @@ int main()
 
     while(running)
     {
+
+
         if (values_updated)
         {
             std::cout << "a: " << a << " (" << (double)a << ")" << std::endl <<
@@ -27,18 +31,22 @@ int main()
                      "4. Прибавить целое число к a" << std::endl <<
                      "0. Выход" << std::endl;
 
-        std::cin >> choice;
+        //std::cin >> choice;
+
+        do
+            choice = getchar();
+        while (choice < '0' || choice > '4' );
 
         switch(choice)
         {
-        case 1:
+        case '1':
             {
                 rational sum = a + b;
                 std::cout << "a + b: " << sum << std::endl;
                 break;
             }
 
-        case 2:
+        case '2':
             {
                 int integer;
                 std::cout << "Введите целое число: ";
@@ -57,13 +65,13 @@ int main()
                 std::cout << "a + " << integer << ": " << sum_with_int << std::endl;
                 break;
             }
-        case 3:
+        case '3':
             {
                 a += b;
                 values_updated = true;
                 break;
             }
-        case 4:
+        case '4':
             {
                 int integer;
                 std::cout << "Введите целое число: ";
@@ -81,8 +89,8 @@ int main()
                 values_updated = true;
                 break;
             }
-        case 0:
-            return 0;
+        case '0':
+            running = false;
         }
     }
 
