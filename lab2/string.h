@@ -11,9 +11,12 @@ public:
     String();
     String(char*);
     String(const String&);
+    String(char);
     ~String();
 
     String& operator=(String&);
+
+    int get_length();
 };
 
 #endif // STRING_H_INCLUDED
