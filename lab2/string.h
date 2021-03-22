@@ -13,7 +13,7 @@ public:
     String(const String&);
     ~String();
 
-    String& operator=(String& other);
+    String& operator=(String&);
 };
 
 #endif // STRING_H_INCLUDED
