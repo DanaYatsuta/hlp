@@ -12,6 +12,13 @@ String::String(char* c_string)
     strcpy(string_begin, c_string);
 }
 
+String::String(char c)
+{
+    length = 1;
+    string_begin = new char[1];
+    string_begin[0] = c;
+}
+
 String::String(const String& other)
 {
     length = other.length;
@@ -35,4 +42,8 @@ String& String::operator=(String& other)
     strcpy(string_begin, other.string_begin);
 }
 
+int String::get_length()
+{
+    return length;
+}
 
