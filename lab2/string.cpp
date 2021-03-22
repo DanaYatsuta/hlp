@@ -23,3 +23,16 @@ String::~String()
 {
     delete string_begin;
 }
+
+String& String::operator=(String& other)
+{
+    if (this == &other)
+        return *this;
+
+    length = other.length;
+    delete string_begin;
+    string_begin = new char[length];
+    strcpy(string_begin, other.string_begin);
+}
+
+
