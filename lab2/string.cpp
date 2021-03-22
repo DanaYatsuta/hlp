@@ -18,3 +18,8 @@ String::String(const String& other)
     string_begin = new char[length];
     strcpy(string_begin, other.string_begin);
 }
+
+String::~String()
+{
+    delete string_begin;
+}
